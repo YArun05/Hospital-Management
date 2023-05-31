@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+  <title>Hospital Management System</title>
+  <link rel="icon" href="images/favicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: #f0f1f2;">
+<marquee width="100%" direction="left" height="50px">
+<h3><b>WELCOME TO HOSPITAL MANAGEMENT SYSTEM  &nbsp;  &nbsp;  &nbsp;  &nbsp;WELCOME TO HOSPITAL MANAGEMENT SYSTEM &nbsp;  &nbsp;  &nbsp;  &nbsp; WELCOME TO HOSPITAL MANAGEMENT SYSTEM </b></h3>
+</marquee>
+ <nav class="navbar navbar-inverse ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="{% url 'index'%}"><b style="color:white;">HOSPITAL MANAGEMENT SYSTEM</b></a>
+    </div>
+
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="{% url 'index'%}">Home</a></li>
+      <li><a href="{% url 'about'%}">About</a></li>
+      <li><a href="{% url 'contact'%}">Contact</a></li>
+    </ul>
+      <form class="navbar-form navbar-right" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+        <ul class="nav navbar-nav navbar-right">
+      <li><a href="{% url 'add_patient' %}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="{% url 'login'%}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+{% block body %}
+{% endblock %}
+</body></html>

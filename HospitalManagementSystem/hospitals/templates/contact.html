@@ -1,0 +1,33 @@
+{% extends 'navigation.html' %}
+<style>
+  p{
+  font-weight:bold;
+  }
+  p:hover{
+  color:red;
+  font-size:20px;
+  }
+  .mydivstyle:hover{
+  box-shadow:0 0 20px rgba(0, 0, 0, 0.3);
+  transform:translate y(-50);
+</style>
+{% block body %}
+<h1 class="text-center"><b>Contact Us</b></h1>
+<div class="container" style="margin-top:50px;">
+  <div class="row">
+    <div class="col-sm-3 text-center mydivstyle"><h4><b><i class="fas fa-phone-square">&nbsp;Contact</i></b></h4>
+      <p class="text-danger "><a href="tel: +987653423211">+99867342673467</a></p>
+    </div>
+    <div class="col-sm-3 text-center mydivstyle"><h4><b><i class="fa fa-envelope">&nbsp;Send-Email</i></b></h4>
+    <p><a href="mail to:abc@gmail.com">abc@gmail.com</a></p>
+    </div>
+    <div class="col-sm-3 text-center mydivstyle"><h4><b><i class="fa fa-address-card">&nbsp;Office Address</i></b></h4>
+    <p><a href="https://maps.google.com">Thane, Maharashtra</a></p>
+    </div>
+    <div class="col-sm-3 text-center mydivstyle"><h4><b><i class="fa fa-address-card">&nbsp;Office Time</i></b></h4>
+    <p>10AM To 05PM</p>
+    </div>
+  </div>
+</div>
+
+{% endblock%}
